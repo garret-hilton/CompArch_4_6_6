@@ -1,0 +1,40 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.NUMERIC_STD.all;
+use IEEE.std_logic_signed.all;
+
+entity alpha is
+    port  ( zeroCount      :in  std_logic_vector(4 downto 0);
+	    alpha          :out signed (5 downto 0));
+end entity;
+
+architecture alpha_arch of alpha is
+
+	 signal Z         :  signed(4 downto 0);
+	 signal Beta      :  signed(4 downto 0);
+	 signal NegBeta   :  signed(4 downto 0);
+	 signal LSLBeta   :  signed(5 downto 0);
+	 signal LSRBeta   :  signed(4 downto 0);
+	 
+	 begin
+      
+		Z <= signed(zeroCount);
+	 
+	   Beta <= 17 - Z;
+	   NegBeta <= -Beta; --(Not Beta) + 1;
+	   LSLBeta <= NegBeta(4) & (NegBeta sll 1); --2 * NegBeta;  
+           LSRBeta <= Beta srl 1;
+		
+		Alpha_Process : process (LSRBeta)
+		
+		begin
+			 if(Beta(0) = '0') then 
+			 -- it's even
+				 alpha <= LSLBeta + LSRBeta;
+                         else
+                         -- it's odd
+		             alpha <= LSLBeta + LSRBeta + 1;
+                         end if;
+               end process;
+	
+end architecture;

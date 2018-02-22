@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/17.0
+Efull_adder
+Z0 w1516134232
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/EELE466/GHC_DDC/lab1
+Z4 8C:/EELE466/GHC_DDC/lab1/full_adder.vhd
+Z5 FC:/EELE466/GHC_DDC/lab1/full_adder.vhd
+l0
+L4
+V_WT^TPoVg5=E@G@z;4HdF1
+!s100 O?4>gA60hZ:QU]dg?4DF_1
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1516134240
+!i10b 1
+Z8 !s108 1516134240.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/EELE466/GHC_DDC/lab1/full_adder.vhd|
+Z10 !s107 C:/EELE466/GHC_DDC/lab1/full_adder.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Afull_adder_arch
+R1
+R2
+DEx4 work 10 full_adder 0 22 _WT^TPoVg5=E@G@z;4HdF1
+l12
+L9
+VJEW;aG0=g5cC]l1S^0LoK0
+!s100 a>a2BAg<fIE_G7]`35JQW1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Erca_eight_bit
+Z13 w1516134231
+R1
+R2
+R3
+Z14 8C:/EELE466/GHC_DDC/lab1/rca_eight_bit.vhd
+Z15 FC:/EELE466/GHC_DDC/lab1/rca_eight_bit.vhd
+l0
+L4
+VbNnQQIW=Q>JO;zB@45gng1
+!s100 Q@9PKU7=3B;lAJco`:IEm1
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/EELE466/GHC_DDC/lab1/rca_eight_bit.vhd|
+Z17 !s107 C:/EELE466/GHC_DDC/lab1/rca_eight_bit.vhd|
+!i113 1
+R11
+R12
+Arca_eight_bit_arch
+R1
+R2
+DEx4 work 13 rca_eight_bit 0 22 bNnQQIW=Q>JO;zB@45gng1
+l23
+L11
+VKgCZV`5M8i`[7_J7kl>J33
+!s100 WI`zkdaHRhgzVcDVh`1eG0
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

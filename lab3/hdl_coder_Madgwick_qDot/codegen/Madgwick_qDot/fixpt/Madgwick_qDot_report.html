@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for Madgwick_qDot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+	.code, .code tr, .code th, .code td { border: none; border-collapse: collapse; }
+	.padd { padding-left: 5px; }
+	td.cov, th.cov { width: 50px; height: 20px; text-align: center; font-weight: bold; border-right: 2px solid black; cell-spacing: 0px; }
+	td.cov { vertical-align: top; }
+	td.black { color: #000000; font-weight: bold; padding-top: 4px; }
+	td.white { color: #FFFFFF; font-weight: bold; padding-top: 4px; }
+	.code th { font-weight: bold; border-bottom: 2px solid black; }
+</style>
+</head>
+<body>
+<h3>Generated on  2018-01-30 11:22:02</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>Madgwick_qDot<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function [qDot1, qDot2, qDot3, qDot4] = Madgwick_qDot(q0, q1, q2, q3, gx, gy, gz)
+% Rate of change of quaternion from gyroscope
+qDot1 = 0.5 * (-q1 * gx - q2 * gy - q3 * gz);
+qDot2 = 0.5 * ( q0 * gx + q2 * gz - q3 * gy);
+qDot3 = 0.5 * ( q0 * gy - q1 * gz + q3 * gx);
+qDot4 = 0.5 * ( q0 * gz + q1 * gy - q2 * gx);
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="a">
+<TD class="left">gx</TD><TD class="left">double</TD><TD class="right">-34.858057628060756</TD><TD class="right">34.8835033722418</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 7)</TD></TR>
+<TR class="b">
+<TD class="left">gy</TD><TD class="left">double</TD><TD class="right">-34.90142350249712</TD><TD class="right">34.79279598886456</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 7)</TD></TR>
+<TR class="a">
+<TD class="left">gz</TD><TD class="left">double</TD><TD class="right">-34.88837391350014</TD><TD class="right">34.80838501635842</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 7)</TD></TR>
+<TR class="b">
+<TD class="left">q0</TD><TD class="left">double</TD><TD class="right">0.0013044828529255037</TD><TD class="right">0.9994489713903783</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 14, 14)</TD></TR>
+<TR class="a">
+<TD class="left">q1</TD><TD class="left">double</TD><TD class="right">0.00013254354544556257</TD><TD class="right">0.997735979773324</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 14, 14)</TD></TR>
+<TR class="b">
+<TD class="left">q2</TD><TD class="left">double</TD><TD class="right">7.026065096382705e-05</TD><TD class="right">0.99906704216243</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 14, 14)</TD></TR>
+<TR class="a">
+<TD class="left">q3</TD><TD class="left">double</TD><TD class="right">0.00036562376330573354</TD><TD class="right">0.9989763110341638</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 14, 14)</TD></TR>
+<TR class="b">
+<TD class="left">qDot1</TD><TD class="left">double</TD><TD class="right">-31.442101027475434</TD><TD class="right">31.69750934592967</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 8)</TD></TR>
+<TR class="a">
+<TD class="left">qDot2</TD><TD class="left">double</TD><TD class="right">-33.24283279855322</TD><TD class="right">31.740793517049234</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 7)</TD></TR>
+<TR class="b">
+<TD class="left">qDot3</TD><TD class="left">double</TD><TD class="right">-29.641517232915632</TD><TD class="right">34.05240562509222</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 7)</TD></TR>
+<TR class="a">
+<TD class="left">qDot4</TD><TD class="left">double</TD><TD class="right">-39.334907052451555</TD><TD class="right">33.63619097905909</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 7)</TD></TR>
+</TABLE>
+
+</body>
+</html>

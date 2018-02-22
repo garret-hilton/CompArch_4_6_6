@@ -1,0 +1,43 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.NUMERIC_STD.all;
+use IEEE.std_logic_signed.all;
+
+entity alpha is
+    port  ( zeroCount      :in  std_logic_vector(4 downto 0);
+            clk  		   :in  std_logic;
+            alpha          :out signed (6 downto 0));
+end entity;
+
+architecture alpha_arch of alpha is
+
+   signal Zsig         :   signed(5 downto 0);
+   signal Betasig       :  signed(5 downto 0);
+   signal Betasig1       :  signed(5 downto 0);
+   signal NegBetasig    :  signed(5 downto 0);
+   signal LSLBetasig    :  signed(6 downto 0);
+   signal LSRBetasig    :  signed(5 downto 0);
+  
+   begin
+
+     Zsig <= "0" & signed(zeroCount);
+     Betasig <= 17 - Zsig;
+     NegBetasig <= -Betasig;--(Not Betasig) + 1;
+     LSLBetasig <= "1" & (NegBetasig sll 1); --2 * NegBeta;
+     LSRBetasig <= shift_right(Betasig, 1);
+
+  Alpha_Process : process (clk)
+
+    begin
+	  if (clk'event and clk='1') then
+	    if (Betasig(0) = '0') then 
+		  alpha <= LSLBetasig + LSRBetasig;
+		else
+		  alpha <= LSLBetasig + LSRBetasig + 1; 
+		end if;
+      end if;
+
+
+    end process;
+
+end architecture;

@@ -1,0 +1,23 @@
+C:/EELE466/GHC_DDC/Lab4/ModelSim/Alpha/alpha_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/EELE466/GHC_DDC/Lab4/ModelSim/Alpha/alpha_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity alpha_tb
+-- Compiling architecture alpha_tb_arch of alpha_tb
+
+} {} {}} C:/EELE466/GHC_DDC/Lab4/ModelSim/Alpha/alpha.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/EELE466/GHC_DDC/Lab4/ModelSim/Alpha/alpha.vhd
+Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity alpha
+-- Compiling architecture alpha_arch of alpha
+
+} {} {}}

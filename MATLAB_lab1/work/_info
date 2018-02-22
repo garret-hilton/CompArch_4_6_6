@@ -1,0 +1,97 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/h39d914/Documents/MATLAB
+T_opt
+!s110 1516134681
+V;R6;ckfi2_2mzbDN?_ASA3
+04 13 18 work rca_eight_bit rca_eight_bit_arch 1
+=1-1866da25eb57-5a5e6118-1d9-3694
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.5c;63
+Efull_adder
+Z1 w1516134232
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/EELE466/GHC_DDC/lab1/full_adder.vhd
+Z5 FC:/EELE466/GHC_DDC/lab1/full_adder.vhd
+l0
+L4
+V_WT^TPoVg5=E@G@z;4HdF1
+!s100 O?4>gA60hZ:QU]dg?4DF_1
+Z6 OL;C;10.5c;63
+32
+Z7 !s110 1516134473
+!i10b 1
+Z8 !s108 1516134473.000000
+Z9 !s90 -work|work|-2002|-explicit|-vopt|-stats=none|C:/EELE466/GHC_DDC/lab1/full_adder.vhd|
+Z10 !s107 C:/EELE466/GHC_DDC/lab1/full_adder.vhd|
+!i113 0
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Afull_adder_arch
+R2
+R3
+DEx4 work 10 full_adder 0 22 _WT^TPoVg5=E@G@z;4HdF1
+l12
+L9
+VJEW;aG0=g5cC]l1S^0LoK0
+!s100 a>a2BAg<fIE_G7]`35JQW1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Erca_eight_bit
+Z13 w1516134231
+R2
+R3
+R0
+Z14 8C:/EELE466/GHC_DDC/lab1/rca_eight_bit.vhd
+Z15 FC:/EELE466/GHC_DDC/lab1/rca_eight_bit.vhd
+l0
+L4
+VbNnQQIW=Q>JO;zB@45gng1
+!s100 Q@9PKU7=3B;lAJco`:IEm1
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -work|work|-2002|-explicit|-vopt|-stats=none|C:/EELE466/GHC_DDC/lab1/rca_eight_bit.vhd|
+Z17 !s107 C:/EELE466/GHC_DDC/lab1/rca_eight_bit.vhd|
+!i113 0
+R11
+R12
+Arca_eight_bit_arch
+R2
+R3
+DEx4 work 13 rca_eight_bit 0 22 bNnQQIW=Q>JO;zB@45gng1
+l23
+L11
+VKgCZV`5M8i`[7_J7kl>J33
+!s100 WI`zkdaHRhgzVcDVh`1eG0
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 0
+R11
+R12
